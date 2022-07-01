@@ -13,6 +13,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp", "WebApp\WebApp.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugins.DataStore.SQL", "Plugins.DataStore.SQL\Plugins.DataStore.SQL.csproj", "{EACC63D1-DC6A-4134-890C-9B0DD8FD3957}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp.Demo.UnitTest", "WebApp.Demo.UnitTest\WebApp.Demo.UnitTest.csproj", "{7BA8D54D-B722-4CA9-9E91-576A841C3EA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp.Demo.Data.Test", "WebApp.Demo.Data.Test\WebApp.Demo.Data.Test.csproj", "{1E9CB7F9-C96F-45D2-B090-4AD0594DC1B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{EACC63D1-DC6A-4134-890C-9B0DD8FD3957}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EACC63D1-DC6A-4134-890C-9B0DD8FD3957}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EACC63D1-DC6A-4134-890C-9B0DD8FD3957}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BA8D54D-B722-4CA9-9E91-576A841C3EA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BA8D54D-B722-4CA9-9E91-576A841C3EA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BA8D54D-B722-4CA9-9E91-576A841C3EA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BA8D54D-B722-4CA9-9E91-576A841C3EA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E9CB7F9-C96F-45D2-B090-4AD0594DC1B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E9CB7F9-C96F-45D2-B090-4AD0594DC1B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E9CB7F9-C96F-45D2-B090-4AD0594DC1B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E9CB7F9-C96F-45D2-B090-4AD0594DC1B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
