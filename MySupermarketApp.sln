@@ -5,15 +5,15 @@ VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UseCases", "UseCases\UseCases.csproj", "{36E2B4BD-9CE2-4471-974A-E10EB27F9F45}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreBusiness", "CoreBusiness\CoreBusiness.csproj", "{165EAF45-E3AB-4E49-AAC9-503CB0788464}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "CoreBusiness\Models.csproj", "{165EAF45-E3AB-4E49-AAC9-503CB0788464}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp", "WebApp\WebApp.csproj", "{E9D01C5E-4CF7-46A8-82D8-7B0719BB3F4F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugins.DataStore.SQL", "Plugins.DataStore.SQL\Plugins.DataStore.SQL.csproj", "{EACC63D1-DC6A-4134-890C-9B0DD8FD3957}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStore.SQL", "Plugins.DataStore.SQL\DataStore.SQL.csproj", "{EACC63D1-DC6A-4134-890C-9B0DD8FD3957}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp.Demo.UnitTest", "WebApp.Demo.UnitTest\WebApp.Demo.UnitTest.csproj", "{7BA8D54D-B722-4CA9-9E91-576A841C3EA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp.Markup.Test", "WebApp.Demo.UnitTest\WebApp.Markup.Test.csproj", "{7BA8D54D-B722-4CA9-9E91-576A841C3EA9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp.Demo.Data.Test", "WebApp.Demo.Data.Test\WebApp.Demo.Data.Test.csproj", "{1E9CB7F9-C96F-45D2-B090-4AD0594DC1B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp.BusinessLogic.Test", "WebApp.Demo.Data.Test\WebApp.BusinessLogic.Test.csproj", "{1E9CB7F9-C96F-45D2-B090-4AD0594DC1B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
