@@ -13,10 +13,11 @@ namespace WebApp.Demo.UnitTest
         private Bunit.TestContext testContext;
         private Mock<IViewCategoriesUseCase> viewMock;
         private Mock<IDeleteCategoryUseCase> delMock;
-
         private Mock<IViewProductsUseCase> viewProdMock;
         private Mock<IDeleteProductUseCase> delProdMock;
         private Mock<IGetCategoryByIdUseCase> getByIdMock;
+        private Mock<IAddCategoryUseCase> addCategoryMock;
+        private Mock<IAddProductUseCase> addProductMock;
 
         [SetUp]
         public void Setup()
@@ -28,6 +29,8 @@ namespace WebApp.Demo.UnitTest
             getByIdMock = new Mock<IGetCategoryByIdUseCase>();
             viewProdMock = new Mock<IViewProductsUseCase>();
             delProdMock = new Mock<IDeleteProductUseCase>();
+            addCategoryMock = new Mock<IAddCategoryUseCase>();
+            addProductMock = new Mock<IAddProductUseCase>();
         }
 
         [TearDown]
@@ -77,6 +80,34 @@ namespace WebApp.Demo.UnitTest
             Assert.IsTrue(component.Markup.Contains("<th>Product Name</th>"));
             Assert.IsTrue(component.Markup.Contains("<th>Price</th>"));
             Assert.IsTrue(component.Markup.Contains("<th>Quantity</th>"));
+            Assert.IsNotNull(submit);
+        }
+
+        [Test]
+        public void AddCategory_Markup_Test()
+        {
+            testContext.Services.AddTransient(x => addCategoryMock.Object);
+            
+            var component = testContext.RenderComponent<AddCategoryComponent>();
+            var buttons = component.FindAll("button");
+            var submit = buttons.FirstOrDefault(b => b.OuterHtml.Contains("Save"));
+
+            Assert.IsNotNull(component);
+            Assert.IsNotNull(submit);
+        }
+
+        [Test]
+        public void AddProduct_Markup_Test()
+        {         
+            testContext.Services.AddTransient(x => getByIdMock.Object);
+            testContext.Services.AddTransient(x => viewMock.Object);
+            testContext.Services.AddTransient(x => addProductMock.Object);
+
+            var component = testContext.RenderComponent<AddProductComponent>();
+            var buttons = component.FindAll("button");
+            var submit = buttons.FirstOrDefault(b => b.OuterHtml.Contains("Save"));
+
+            Assert.IsNotNull(component);
             Assert.IsNotNull(submit);
         }
 
